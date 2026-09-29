@@ -1,0 +1,26 @@
+###### Class com.google.android.gms.dynamite.zzn (com.google.android.gms.dynamite.zzn)
+.class final Lcom/google/android/gms/dynamite/zzn;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-basement@@18.11.0"
+
+
+# instance fields
+.field public zza:Landroid/database/Cursor;
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method synthetic constructor <init>([B)V
+    .registers 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

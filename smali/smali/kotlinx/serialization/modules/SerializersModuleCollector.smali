@@ -1,0 +1,340 @@
+###### Class kotlinx.serialization.modules.SerializersModuleCollector (kotlinx.serialization.modules.SerializersModuleCollector)
+.class public interface abstract Lkotlinx/serialization/modules/SerializersModuleCollector;
+.super Ljava/lang/Object;
+.source "SerializersModuleCollector.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008g\u0018\u00002\u00020\u0001J.\u0010\u0002\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0004*\u00020\u00012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u00062\u000c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u0008H\u0016JQ\u0010\u0002\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0004*\u00020\u00012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u00062/\u0010\t\u001a+\u0012\u001d\u0012\u001b\u0012\u0008\u0012\u0006\u0012\u0002\u0008\u00030\u00080\u000b\u00a2\u0006\u000c\u0008\u000c\u0012\u0008\u0008\r\u0012\u0004\u0008\u0008(\u000e\u0012\u0008\u0012\u0006\u0012\u0002\u0008\u00030\u00080\nH&JF\u0010\u000f\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0010*\u00020\u0001\"\u0008\u0008\u0001\u0010\u0011*\u0002H\u00102\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u0002H\u00100\u00062\u000c\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u0002H\u00110\u00062\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u0002H\u00110\u0008H&JK\u0010\u0015\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0010*\u00020\u00012\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u0002H\u00100\u00062)\u0010\u0016\u001a%\u0012\u0013\u0012\u0011H\u0010\u00a2\u0006\u000c\u0008\u000c\u0012\u0008\u0008\r\u0012\u0004\u0008\u0008(\u0017\u0012\u000c\u0012\n\u0012\u0004\u0012\u0002H\u0010\u0018\u00010\u00180\nH&JM\u0010\u0019\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0010*\u00020\u00012\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u0002H\u00100\u00062+\u0010\u001a\u001a\'\u0012\u0015\u0012\u0013\u0018\u00010\u001b\u00a2\u0006\u000c\u0008\u000c\u0012\u0008\u0008\r\u0012\u0004\u0008\u0008(\u001c\u0012\u000c\u0012\n\u0012\u0004\u0012\u0002H\u0010\u0018\u00010\u001d0\nH&JM\u0010\u001e\u001a\u00020\u0003\"\u0008\u0008\u0000\u0010\u0010*\u00020\u00012\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u0002H\u00100\u00062+\u0010\u001a\u001a\'\u0012\u0015\u0012\u0013\u0018\u00010\u001b\u00a2\u0006\u000c\u0008\u000c\u0012\u0008\u0008\r\u0012\u0004\u0008\u0008(\u001c\u0012\u000c\u0012\n\u0012\u0004\u0012\u0002H\u0010\u0018\u00010\u001d0\nH\u0017\u00a8\u0006\u001f"
+    }
+    d2 = {
+        "Lkotlinx/serialization/modules/SerializersModuleCollector;",
+        "",
+        "contextual",
+        "",
+        "T",
+        "kClass",
+        "Lkotlin/reflect/KClass;",
+        "serializer",
+        "Lkotlinx/serialization/KSerializer;",
+        "provider",
+        "Lkotlin/Function1;",
+        "",
+        "Lkotlin/ParameterName;",
+        "name",
+        "typeArgumentsSerializers",
+        "polymorphic",
+        "Base",
+        "Sub",
+        "baseClass",
+        "actualClass",
+        "actualSerializer",
+        "polymorphicDefaultSerializer",
+        "defaultSerializerProvider",
+        "value",
+        "Lkotlinx/serialization/SerializationStrategy;",
+        "polymorphicDefaultDeserializer",
+        "defaultDeserializerProvider",
+        "",
+        "className",
+        "Lkotlinx/serialization/DeserializationStrategy;",
+        "polymorphicDefault",
+        "kotlinx-serialization-core"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlinx/serialization/ExperimentalSerializationApi;
+.end annotation
+
+
+# virtual methods
+.method public abstract contextual(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TT;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/util/List<",
+            "+",
+            "Lkotlinx/serialization/KSerializer<",
+            "*>;>;+",
+            "Lkotlinx/serialization/KSerializer<",
+            "*>;>;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract contextual(Lkotlin/reflect/KClass;Lkotlinx/serialization/KSerializer;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TT;>;",
+            "Lkotlinx/serialization/KSerializer<",
+            "TT;>;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract polymorphic(Lkotlin/reflect/KClass;Lkotlin/reflect/KClass;Lkotlinx/serialization/KSerializer;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Base:",
+            "Ljava/lang/Object;",
+            "Sub::TBase;>(",
+            "Lkotlin/reflect/KClass<",
+            "TBase;>;",
+            "Lkotlin/reflect/KClass<",
+            "TSub;>;",
+            "Lkotlinx/serialization/KSerializer<",
+            "TSub;>;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract polymorphicDefault(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Base:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TBase;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/String;",
+            "+",
+            "Lkotlinx/serialization/DeserializationStrategy<",
+            "+TBase;>;>;)V"
+        }
+    .end annotation
+
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer"
+        replaceWith = .subannotation Lkotlin/ReplaceWith;
+            expression = "polymorphicDefaultDeserializer(baseClass, defaultDeserializerProvider)"
+            imports = {}
+        .end subannotation
+    .end annotation
+.end method
+
+.method public abstract polymorphicDefaultDeserializer(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Base:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TBase;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/String;",
+            "+",
+            "Lkotlinx/serialization/DeserializationStrategy<",
+            "+TBase;>;>;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract polymorphicDefaultSerializer(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Base:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TBase;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-TBase;+",
+            "Lkotlinx/serialization/SerializationStrategy<",
+            "-TBase;>;>;)V"
+        }
+    .end annotation
+.end method
+
+###### Class kotlinx.serialization.modules.SerializersModuleCollector.DefaultImpls (kotlinx.serialization.modules.SerializersModuleCollector$DefaultImpls)
+.class public final Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls;
+.super Ljava/lang/Object;
+.source "SerializersModuleCollector.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlinx/serialization/modules/SerializersModuleCollector;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DefaultImpls"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static synthetic $r8$lambda$cazRvNrFYCw5NUyjzGnTRkaYsew(Lkotlinx/serialization/KSerializer;Ljava/util/List;)Lkotlinx/serialization/KSerializer;
+    .registers 2
+
+    invoke-static {p0, p1}, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls;->contextual$lambda$0(Lkotlinx/serialization/KSerializer;Ljava/util/List;)Lkotlinx/serialization/KSerializer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static contextual(Lkotlinx/serialization/modules/SerializersModuleCollector;Lkotlin/reflect/KClass;Lkotlinx/serialization/KSerializer;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlinx/serialization/modules/SerializersModuleCollector;",
+            "Lkotlin/reflect/KClass<",
+            "TT;>;",
+            "Lkotlinx/serialization/KSerializer<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    const-string v0, "kClass"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "serializer"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 28
+    new-instance v0, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p2}, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0;-><init>(Lkotlinx/serialization/KSerializer;)V
+
+    invoke-interface {p0, p1, v0}, Lkotlinx/serialization/modules/SerializersModuleCollector;->contextual(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+
+    return-void
+.end method
+
+.method private static contextual$lambda$0(Lkotlinx/serialization/KSerializer;Ljava/util/List;)Lkotlinx/serialization/KSerializer;
+    .registers 3
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public static polymorphicDefault(Lkotlinx/serialization/modules/SerializersModuleCollector;Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Base:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlinx/serialization/modules/SerializersModuleCollector;",
+            "Lkotlin/reflect/KClass<",
+            "TBase;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/String;",
+            "+",
+            "Lkotlinx/serialization/DeserializationStrategy<",
+            "+TBase;>;>;)V"
+        }
+    .end annotation
+
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer"
+        replaceWith = .subannotation Lkotlin/ReplaceWith;
+            expression = "polymorphicDefaultDeserializer(baseClass, defaultDeserializerProvider)"
+            imports = {}
+        .end subannotation
+    .end annotation
+
+    const-string v0, "baseClass"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "defaultDeserializerProvider"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 102
+    invoke-interface {p0, p1, p2}, Lkotlinx/serialization/modules/SerializersModuleCollector;->polymorphicDefaultDeserializer(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function1;)V
+
+    return-void
+.end method
+
+###### Class kotlinx.serialization.modules.SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0 (kotlinx.serialization.modules.SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0)
+.class public final synthetic Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Lkotlinx/serialization/KSerializer;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lkotlinx/serialization/KSerializer;)V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0;->f$0:Lkotlinx/serialization/KSerializer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 0
+    iget-object v0, p0, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls$$ExternalSyntheticLambda0;->f$0:Lkotlinx/serialization/KSerializer;
+
+    check-cast p1, Ljava/util/List;
+
+    invoke-static {v0, p1}, Lkotlinx/serialization/modules/SerializersModuleCollector$DefaultImpls;->$r8$lambda$cazRvNrFYCw5NUyjzGnTRkaYsew(Lkotlinx/serialization/KSerializer;Ljava/util/List;)Lkotlinx/serialization/KSerializer;
+
+    move-result-object p1
+
+    return-object p1
+.end method

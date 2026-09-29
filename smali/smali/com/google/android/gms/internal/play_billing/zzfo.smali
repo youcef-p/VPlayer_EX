@@ -1,0 +1,4 @@
+###### Class com.google.android.gms.internal.play_billing.zzfo (com.google.android.gms.internal.play_billing.zzfo)
+.class public final synthetic Lcom/google/android/gms/internal/play_billing/zzfo;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@9.1.0"

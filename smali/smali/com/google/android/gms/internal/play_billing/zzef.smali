@@ -1,0 +1,4 @@
+###### Class com.google.android.gms.internal.play_billing.zzef (com.google.android.gms.internal.play_billing.zzef)
+.class public final synthetic Lcom/google/android/gms/internal/play_billing/zzef;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@9.1.0"

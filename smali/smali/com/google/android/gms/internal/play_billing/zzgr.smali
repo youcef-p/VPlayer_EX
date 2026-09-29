@@ -1,0 +1,9 @@
+###### Class com.google.android.gms.internal.play_billing.zzgr (com.google.android.gms.internal.play_billing.zzgr)
+.class public interface abstract Lcom/google/android/gms/internal/play_billing/zzgr;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@9.1.0"
+
+
+# virtual methods
+.method public abstract zza()I
+.end method

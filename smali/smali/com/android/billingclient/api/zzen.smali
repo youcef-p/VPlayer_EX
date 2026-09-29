@@ -1,0 +1,4 @@
+###### Class com.android.billingclient.api.zzen (com.android.billingclient.api.zzen)
+.class public final synthetic Lcom/android/billingclient/api/zzen;
+.super Ljava/lang/Object;
+.source "com.android.billingclient:billing@@9.1.0"
